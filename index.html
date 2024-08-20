@@ -28,7 +28,7 @@
     <!-- Header section start -->
     <header class="container mx-auto">
         <!-- Navbar start -->
-        <nav class="py-5">
+        <nav class="py-5 mr-4 lg:mr-0">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -48,26 +48,71 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-2xl lg:text-3xl font-extrabold text-slate-900" href="#">Hockey<span class="text-red-500">'</span>s</a>
+                    <a class="text-2xl lg:text-3xl font-extrabold text-slate-900" href="#">Hockey<span
+                            class="text-red-500">'</span>s</a>
                 </div>
-                
+
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">Home</a></li>
-                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">About</a></li>
-                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">Pages</a></li>
-                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">Blog</a></li>
-                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">Contact</a></li>
+                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">Home</a>
+                        </li>
+                        <li class="text-neutral-700 text-xl"><a
+                                class="hover:bg-transparent hover:text-red-500">About</a></li>
+                        <li class="text-neutral-700 text-xl"><a
+                                class="hover:bg-transparent hover:text-red-500">Pages</a></li>
+                        <li class="text-neutral-700 text-xl"><a class="hover:bg-transparent hover:text-red-500">Blog</a>
+                        </li>
+                        <li class="text-neutral-700 text-xl"><a
+                                class="hover:bg-transparent hover:text-red-500">Contact</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="navbar-end space-x-8">
-                    <a class="hidden lg:block" href="#"><i class="fa-solid fa-magnifying-glass text-neutral-700"></i></a>
+                    <a class="hidden lg:block" href="#"><i
+                            class="fa-solid fa-magnifying-glass text-neutral-700"></i></a>
                     <a class="btn btn-error text-white font-bold lg:text-xl" href="#">Get Ticket</a>
                 </div>
             </div>
         </nav>
         <!-- Navbar end -->
+
+        <!-- Carousel section start -->
+        <section class="relative mx-5 lg:mx-0">
+            <div class="carousel w-full rounded-2xl">
+                <!-- slid-1 -->
+                <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+                    <img src="./images/tropy.png" class="w-full" />
+                    <div class="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-5 lg:left-5 flex justify-between gap-5">
+                        <a href="#slide3" class="btn btn-circle bg-slate-900 text-white hover:text-slate-900">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-slate-900 text-white hover:text-slate-900">❯</a>
+                    </div>
+                </div>
+
+                <!-- slid-2 -->
+                <div id="slide2" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+                    <img src="./images/field.png" class="w-full" />
+                    <div class="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-5 lg:left-5 flex justify-between gap-5">
+                        <a href="#slide1" class="btn btn-circle bg-slate-900 text-white hover:text-slate-900">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-slate-900 text-white hover:text-slate-900">❯</a>
+                    </div>
+                </div>
+
+                <!-- slid-3 -->
+                <div id="slide3" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+                    <img src="./images/player.png" class="w-full" />
+                    <div class="absolute left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-5 lg:left-5 flex justify-between gap-5">
+                        <a href="#slide2" class="btn btn-circle bg-slate-900 text-white hover:text-slate-900">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-slate-900 text-white hover:text-slate-900">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:max-w-xl lg:absolute bottom-8 right-8 p-8 bg-neutral-900 space-y-4 rounded-xl mt-5 lg:mt-0">
+                <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                <p class="text-slate-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+        <!-- Carousel section end -->
     </header>
     <!-- Header section end -->
 
